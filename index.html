@@ -139,10 +139,30 @@
 
             <section id="projects" class="section">
                 <h2>Featured Projects</h2>
-                <div class="glass-card" style="text-align: center; padding: 4rem;">
-                    <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--primary-color);">Coming Soon</h3>
-                    <p style="font-size: 1.2rem; opacity: 0.8;">I'm currently curating my best work. Check back later!
-                    </p>
+                <div class="projects-grid">
+                    <div class="glass-card project-card">
+                        <h3>Vegetation Risk Monitor</h3>
+                        <p>
+                            Geospatial ETL pipeline and interactive dashboard that identifies wildfire risk from tree
+                            canopies near power lines. A Dagster pipeline ingests GeoJSON, computes proximity via
+                            <code>sjoin_nearest</code> in a metric CRS, scores risk from distance, canopy height, and
+                            NDVI, and loads results into PostGIS. A FastAPI service exposes GeoJSON endpoints with
+                            bounding-box spatial filtering; a React + Deck.GL frontend renders color-coded risk zones
+                            with filters and tooltips.
+                        </p>
+                        <div class="tags">
+                            <span>Dagster</span>
+                            <span>PostGIS</span>
+                            <span>GeoPandas</span>
+                            <span>FastAPI</span>
+                            <span>React</span>
+                            <span>Deck.GL</span>
+                            <span>TypeScript</span>
+                            <span>Docker</span>
+                        </div>
+                        <a href="https://github.com/DheerendraTomar/vegetation-risk-monitor" class="project-link"
+                            target="_blank" rel="noopener">View on GitHub →</a>
+                    </div>
                 </div>
             </section>
 
