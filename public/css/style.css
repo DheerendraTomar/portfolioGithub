@@ -89,6 +89,7 @@ section { position: relative; }
   top: 0;
   z-index: 50;
   background: color-mix(in srgb, var(--paper) 88%, transparent);
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--line);
 }
@@ -454,7 +455,7 @@ section { position: relative; }
   color: var(--ink);
   border-bottom: 2px solid var(--accent);
   padding-bottom: 2px;
-  transition: color 0.18s ease, gap 0.18s ease;
+  transition: color 0.18s ease;
 }
 .project-link span { transition: margin-left 0.18s ease; display: inline-block; }
 .project-link:hover, .project-link:focus-visible { color: var(--accent-ink); }
